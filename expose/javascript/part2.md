@@ -387,3 +387,29 @@ F. `true === Boolean(2)`
 ```js
 2 == '2'   // true
 2 === '2'  // false
+
+### Answer
+
+The function returns:
+
+
+[2, 4, 6]
+
+
+### Explanation
+
+- The array `[1, 2, 3]` is passed into `modifyArray`
+- Each element is passed to the callback `doSomething`
+- `doSomething(num)` returns `num * 2`
+
+So:
+- 1 → 2  
+- 2 → 4  
+- 3 → 6  
+
+These values are pushed into `newArr`.
+
+### Conclusion
+
+- The callback is applied to each element  
+- Final result is `[2, 4, 6]`
