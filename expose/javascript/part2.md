@@ -291,3 +291,99 @@ With a discount of 0.5, each price becomes:
 300 → 150
 
 Each value is pushed into the discounted array.
+
+12. ### Answer
+
+A. Accessing the `name` property:
+```js
+student.name
+
+B. Accessing the Grad Year property:
+
+student['Grad Year']
+
+C. Calling the greeting function:
+
+student.greeting()
+
+D. Accessing the name of Favorite Teacher:
+
+student['Favorite Teacher'].name
+
+E. Accessing index 0 of courseLoad:
+
+student.courseLoad[0]
+
+### 13. Arithmetic
+
+A. `'3' + 2`  
+**Output:** `'32'`  
+**Explanation:** Number `2` is converted to string → string concatenation.
+
+B. `'3' - 2`  
+**Output:** `1`  
+**Explanation:** `-` forces numeric conversion → `'3'` → `3`.
+
+C. `3 + null`  
+**Output:** `3`  
+**Explanation:** `null` → `0`.
+
+D. `'3' + null`  
+**Output:** `'3null'`  
+**Explanation:** `null` → `'null'` → string concatenation.
+
+E. `true + 3`  
+**Output:** `4`  
+**Explanation:** `true` → `1`.
+
+F. `false + null`  
+**Output:** `0`  
+**Explanation:** `false` → `0`, `null` → `0`.
+
+G. `'3' + undefined`  
+**Output:** `'3undefined'`  
+**Explanation:** `undefined` → `'undefined'`.
+
+H. `'3' - undefined`  
+**Output:** `NaN`  
+**Explanation:** `undefined` → `NaN`, math with `NaN` → `NaN`.
+
+---
+
+### 14. Comparison
+
+A. `2 > 1`  
+**Output:** `true`  
+**Explanation:** Normal numeric comparison.
+
+B. `2 < '12'`  
+**Output:** `true`  
+**Explanation:** `'12'` → `12`.
+
+C. `2 == '2'`  
+**Output:** `true`  
+**Explanation:** `==` does type coercion.
+
+D. `2 === '2'`  
+**Output:** `false`  
+**Explanation:** `===` checks type + value.
+
+E. `true == 2`  
+**Output:** `false`  
+**Explanation:** `true` → `1`, so `1 == 2`.
+
+F. `true === Boolean(2)`  
+**Output:** `true`  
+**Explanation:** `Boolean(2)` → `true`.
+
+---
+
+### 15. Difference between `==` and `===`
+
+- `==` (loose equality): converts types before comparing  
+- `===` (strict equality): compares value **and** type without conversion  
+
+**Example:**
+```js
+2 == '2'   // true
+2 === '2'  // false
