@@ -413,3 +413,13 @@ These values are pushed into `newArr`.
 
 - The callback is applied to each element  
 - Final result is `[2, 4, 6]`
+
+19. ### Answer
+
+The output will be:
+
+
+1
+4
+3
+2
